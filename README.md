@@ -48,3 +48,5 @@ _Ditto_ (endpoint: `https://pokeapi.co/api/v2/pokemon/ditto`). Wat moet je hierv
 5. Map over deze resultaten heen en render voor elk resultaat een pokémon op de pagina!
 6. Maak twee knoppen en bekijk de documentatie voor het ophalen van een lijst van pokémons nog eens goed. Wanneer de gebruiker op 'volgende' klikt, willen we een nieuw request doen naar een nieuw endpoint. 
 En we willen dat het ophalen van data getriggerd wordt, wanneer het endpoint wordt veranderd.
+
+[GitHub Repo](git@github.com:hogeschoolnovi/frontend-react-pokemon.git)
