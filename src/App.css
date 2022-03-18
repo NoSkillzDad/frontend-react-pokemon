@@ -1,0 +1,46 @@
+@font-face {
+    font-family: PokemonFont;
+    /*src: url("./assets/PokemonHollow.woff");*/
+    src: url("./assets/PokemonSolid.woff");
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 0.5rem;
+    background-color: #ffaa00;
+    background-image: url("./assets/liquid-cheese.svg");
+    /*background-image: url("assets/blob-scene-haikei.svg");*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.all-container {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.navigation-button {
+    font-family: PokemonFont;
+    -webkit-text-stroke: 2px #4471ee;
+    -webkit-text-fill-color: #fff90f;
+    padding: 0 25px 15px 25px;
+    font-size: 1.7em;
+    border-radius: 5px;
+    background-color: #def2fd;
+    border: 5px solid #1f479b;
+}
+
+.navigation-buttons-wrapper * {
+    margin-left: 20px;
+}
+
+
