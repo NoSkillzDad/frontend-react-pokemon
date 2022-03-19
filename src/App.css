@@ -4,13 +4,13 @@
     src: url("./assets/PokemonSolid.woff");
 }
 
+
+
 .app-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    padding: 3rem 0.5rem;
     background-color: #ffaa00;
     background-image: url("./assets/liquid-cheese.svg");
     /*background-image: url("assets/blob-scene-haikei.svg");*/
@@ -22,11 +22,9 @@
     width: 90vw;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
-
-
 
 .navigation-button {
     font-family: PokemonFont;
@@ -43,4 +41,56 @@
     margin-left: 20px;
 }
 
+.main-nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+    align-self: flex-end;
+    padding: 15px;
+}
 
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 3px;
+}
+
+.main-nav a {
+    color: #4471ee;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+.main-nav li:hover {
+    /*color: #002dab;*/
+    font-weight: bold;
+    margin: 0;
+    text-decoration: underline;
+    border-radius: 5px;
+    background-color: #def2fd;
+    border: 3px solid #1f479b;
+}
+
+#home-pokeball, #item-pokeball {
+    visibility: hidden;
+}
+
+#nav-home:hover ~ #home-pokeball {
+    visibility: visible;
+}
+
+#nav-item:hover + #item-pokeball {
+    visibility: visible;
+}
