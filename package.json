@@ -15,10 +15,10 @@
     "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "npm run clean && parcel build ./src/*.html --public-url ./",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "clean": "rimraf dist",
+    "start": "parcel src/index.html",
+    "search": "parcel src/search.html",
+    "build": "npm run clean && parcel build ./src/*.html --public-url ./"
   },
   "eslintConfig": {
     "extends": [
