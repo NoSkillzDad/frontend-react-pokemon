@@ -19,7 +19,8 @@ const PokemonDetail = ({id, name, image, moves, weight, abilities, type, stats})
 
     const renderStats = (stats) => {
       return stats.map((stat, index) => (
-          <div key={index} className="property-title">{stat.stat.name}<p>{stat.base_stat}</p></div>
+          <div key={index} className="property-title">{stat.stat.name}: <p className={"property-mini-title"} key={index}>{stat.base_stat}</p></div>
+          // <div key={index} className="property-title">{stat.stat.name}: <p>{stat.base_stat}</p></div>
       ))
     }
 
@@ -31,13 +32,13 @@ const PokemonDetail = ({id, name, image, moves, weight, abilities, type, stats})
                 <div className={"name"}>
                     <h3>{name}</h3>
                 </div>
-                <div className="property-title">Moves</div>
-                {renderMoves(moves)}
-                <div className="property-title">Abilities</div>
-                {renderAbilities(abilities)}
                 <div className="property-title">Stats</div>
                 {renderStats(stats)}
-                <div className="property-title">Weight:<p>{weight}</p></div>
+                <div className="property-title">Abilities</div>
+                {renderAbilities(abilities)}
+                <div className="property-title">Moves</div>
+                {renderMoves(moves)}
+                <div className="property-title">weight:<p className={"property-mini-title"}>{weight}</p></div>
                 <div className={"pokemon-id"}><p>#0{id} (type: {type})</p></div>
             </div>
 

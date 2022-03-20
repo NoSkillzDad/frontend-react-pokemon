@@ -19,8 +19,8 @@ const FindPokemon = () => {
             const pokemonDetails = await axios.get(`https://pokeapi.co/api/v2/pokemon/${poke}`);
             setPokemon(pokemonDetails.data);
         } catch (e) {
-            console.log(e);
-            navigate("/PokeNotFound");
+            // navigate(`/PokeNotFound/${e.response}`);
+            navigate(`/PokeNotFound/${e.response.status}`);
         }
     }
 
@@ -31,7 +31,7 @@ const FindPokemon = () => {
 
     useEffect(() => {
         if (isMounted.current) {
-            if (pokemon) setNextPokemon(pokemon.id + 1);
+            setNextPokemon(pokemon.id + 1);
             if (pokemon && pokemon.id > 1) setPreviousPokemon(pokemon.id - 1);
             if (pokemon.id === 1) setPreviousPokemon(null);
         } else {

@@ -37,7 +37,7 @@ const App = () => {
                     <Route path={"/"} element={<PokemonHome/>}/>
                     <Route path={"/items"} element={<AllItems/>}/>
                     <Route path={"/pokemon/:poke"} element={<FindPokemon />}/>
-                    <Route path={"/PokeNotFound"} element={<Poke404 />}/>
+                    <Route path={"/PokeNotFound/:error"} element={<Poke404 />}/>
                 </Routes>
 
             </div>

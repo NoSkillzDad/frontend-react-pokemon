@@ -2,20 +2,18 @@
     position: absolute;
     height: 550px;
     right: -250px;
-    top: -100px;
+    top: -30px;
     margin: 0;
     padding: 0;
     z-index: 9;
 }
 
 .pokemon-details {
+    min-width: 545px;
     width: 50%;
     margin: 20px;
     border-radius: 10px;
     display: flex;
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     border: 3px solid #1f479b;
     padding-bottom: 20px;
     position: relative;
@@ -46,8 +44,17 @@
     font-weight: bold;
     white-space: nowrap;
     display: block;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #1f479b;
+}
+
+.property-mini-title {
+    /*padding: 3px 0 3px 20px;*/
+    font-weight: bold;
+    white-space: nowrap;
+    display: block;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0);
 }
 
 .pokemon-details * {
@@ -57,8 +64,6 @@
 .property-title p {
     font-size: 0.9em;
     color: black;
-    /*display: inline;*/
-    /*font-weight: normal;*/
 }
 
 .ability {
@@ -70,4 +75,62 @@
     background-color: rgba(194, 194, 194, 0.72);
     border: 1px solid #1f479b;
 
+}
+
+@media only screen and (min-width: 1015px) {
+    .pokemon-details img {
+        height: 550px;
+    }
+}
+@media only screen and (max-width: 1014px) {
+    .pokemon-details img {
+        height: 430px;
+        right: -180px;
+        top: -30px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .pokemon-details img {
+        height: 400px;
+        right: -100px;
+        top: 40px;
+    }
+
+    .pokemon-details {
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .pokemon-details h3 {
+        font-size: 2em;
+    }
+
+    .pokemon-id {
+        font-size: 1em;
+    }
+
+    .property-title {
+        padding: 2px 0 2px 15px;
+        font-size: 1.2em;
+    }
+
+    .property-mini-title {
+        font-size: 1.1em;
+    }
+
+    .pokemon-details * {
+        margin: 2px;
+    }
+
+    .property-title p {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .pokemon-details img {
+        height: 350px;
+        right: -30px;
+        top: 40px;
+    }
 }

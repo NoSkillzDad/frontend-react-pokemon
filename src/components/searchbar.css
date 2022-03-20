@@ -1,5 +1,6 @@
 .search-container {
-    width: 490px;
+    width: 495px;
+    display: flex;
     position:relative;
     padding:0;
     margin-right:70px;
@@ -17,11 +18,9 @@
 
 .search-icon {
     width: 70px;
-    /*height: 75px;*/
     position: absolute;
-    /*position:absolute;*/
     bottom:-12px;
-    left:470px;
+    left:440px;
 }
 
 #search-bar:focus {
@@ -38,4 +37,34 @@
 #search-bar:focus::-moz-placeholder {
     transition: opacity 0.45s ease;
     opacity: 0;
+}
+
+@media only screen and (max-width: 840px) {
+    .search-container {
+        width: 350px;
+        position:relative;
+        padding:0;
+        margin-right:50px;
+    }
+    .search-icon {
+        width: 45px;
+        position: absolute;
+        bottom:0;
+        left:340px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .search-container {
+        width: 250px;
+        position:relative;
+        padding:0;
+        margin-right:50px;
+    }
+    .search-icon {
+        width: 40px;
+        position: absolute;
+        bottom:0;
+        left:215px;
+    }
 }
