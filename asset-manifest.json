@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/frontend-react-pokemon/the-extra-mile/static/css/main.0ae89291.chunk.css",
-    "main.js": "/frontend-react-pokemon/the-extra-mile/static/js/main.0f25d4d5.chunk.js",
-    "main.js.map": "/frontend-react-pokemon/the-extra-mile/static/js/main.0f25d4d5.chunk.js.map",
-    "runtime-main.js": "/frontend-react-pokemon/the-extra-mile/static/js/runtime-main.32efa667.js",
-    "runtime-main.js.map": "/frontend-react-pokemon/the-extra-mile/static/js/runtime-main.32efa667.js.map",
-    "static/js/2.724bd0c1.chunk.js": "/frontend-react-pokemon/the-extra-mile/static/js/2.724bd0c1.chunk.js",
-    "static/js/2.724bd0c1.chunk.js.map": "/frontend-react-pokemon/the-extra-mile/static/js/2.724bd0c1.chunk.js.map",
-    "index.html": "/frontend-react-pokemon/the-extra-mile/index.html",
-    "static/css/main.0ae89291.chunk.css.map": "/frontend-react-pokemon/the-extra-mile/static/css/main.0ae89291.chunk.css.map",
-    "static/js/2.724bd0c1.chunk.js.LICENSE.txt": "/frontend-react-pokemon/the-extra-mile/static/js/2.724bd0c1.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/frontend-react-pokemon/the-extra-mile/static/media/PokemonSolid.8adcdd6b.woff",
-    "static/media/App.css": "/frontend-react-pokemon/the-extra-mile/static/media/liquid-cheese.4567a8fb.svg",
-    "static/media/pokeball-png-photos.32cfee51.png": "/frontend-react-pokemon/the-extra-mile/static/media/pokeball-png-photos.32cfee51.png",
-    "static/media/pokemon-logo.277c2064.png": "/frontend-react-pokemon/the-extra-mile/static/media/pokemon-logo.277c2064.png",
-    "static/media/search-loupe-small.02ed14d9.png": "/frontend-react-pokemon/the-extra-mile/static/media/search-loupe-small.02ed14d9.png"
+    "main.css": "/frontend-react-pokemon/static/css/main.5f0f6e3e.chunk.css",
+    "main.js": "/frontend-react-pokemon/static/js/main.0f25d4d5.chunk.js",
+    "main.js.map": "/frontend-react-pokemon/static/js/main.0f25d4d5.chunk.js.map",
+    "runtime-main.js": "/frontend-react-pokemon/static/js/runtime-main.0ad9c868.js",
+    "runtime-main.js.map": "/frontend-react-pokemon/static/js/runtime-main.0ad9c868.js.map",
+    "static/js/2.724bd0c1.chunk.js": "/frontend-react-pokemon/static/js/2.724bd0c1.chunk.js",
+    "static/js/2.724bd0c1.chunk.js.map": "/frontend-react-pokemon/static/js/2.724bd0c1.chunk.js.map",
+    "index.html": "/frontend-react-pokemon/index.html",
+    "static/css/main.5f0f6e3e.chunk.css.map": "/frontend-react-pokemon/static/css/main.5f0f6e3e.chunk.css.map",
+    "static/js/2.724bd0c1.chunk.js.LICENSE.txt": "/frontend-react-pokemon/static/js/2.724bd0c1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/frontend-react-pokemon/static/media/PokemonSolid.8adcdd6b.woff",
+    "static/media/App.css": "/frontend-react-pokemon/static/media/liquid-cheese.4567a8fb.svg",
+    "static/media/pokeball-png-photos.32cfee51.png": "/frontend-react-pokemon/static/media/pokeball-png-photos.32cfee51.png",
+    "static/media/pokemon-logo.277c2064.png": "/frontend-react-pokemon/static/media/pokemon-logo.277c2064.png",
+    "static/media/search-loupe-small.02ed14d9.png": "/frontend-react-pokemon/static/media/search-loupe-small.02ed14d9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.32efa667.js",
+    "static/js/runtime-main.0ad9c868.js",
     "static/js/2.724bd0c1.chunk.js",
-    "static/css/main.0ae89291.chunk.css",
+    "static/css/main.5f0f6e3e.chunk.css",
     "static/js/main.0f25d4d5.chunk.js"
   ]
 }
