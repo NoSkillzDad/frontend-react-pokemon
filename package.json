@@ -38,5 +38,7 @@
   },
   "devDependencies": {
     "axios": "^0.26.1"
-  }
+  },
+  "author": "Alejandro Peralta",
+  "license": "ISC"
 }
