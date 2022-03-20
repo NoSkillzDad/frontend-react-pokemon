@@ -10,6 +10,10 @@
     background-size: cover;
 }
 
+.pokemon-card-link {
+    width: fit-content;
+}
+
 .main-nav {
     display: flex;
     justify-content: space-between;

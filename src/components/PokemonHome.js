@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import PokemonCard from "./PokemonCard";
+import {Link, NavLink, useNavigate} from "react-router-dom";
 
 const PokemonHome = () => {
+    const navigate = useNavigate;
+
     // const [pokemon, setPokemon] = useState(); //used for just one pokemon
     const [allPokemons, setAllPokemons] = useState([]);
     const [nextPage, setNextPage] = useState("https://pokeapi.co/api/v2/pokemon");
@@ -33,11 +36,8 @@ const PokemonHome = () => {
 
             grabPokemons(response.data.results);
 
-            allPokemons.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+            // allPokemons.sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
-            // This is for just 1 pokemon
-            // const response = await axios.get("https://pokeapi.co/api/v2/pokemon/1");
-            // await setPokemon(response.data);
         } catch (e) {
             console.error(e);
         }
@@ -45,6 +45,7 @@ const PokemonHome = () => {
 
     useEffect(() => {
         getAllPokemons();
+        allPokemons.sort((a, b) => parseInt(a.id) - parseInt(b.id));
     }, []);
 
     // useEffect(() => {
@@ -70,6 +71,10 @@ const PokemonHome = () => {
         getAllPokemons(previousPage);
     }
 
+    const findPokemon = (name) => {
+        navigate(`/pokemon/${name}`);
+    }
+
     return (
         <>
             {allPokemons &&
@@ -85,16 +90,19 @@ const PokemonHome = () => {
                     </div>
                     <div className="all-container">
                         {allPokemons.map((pokemon, index) =>
-                            <PokemonCard
-                                key={index}
-                                id={pokemon.id}
-                                image={pokemon.sprites.other.['official-artwork'].front_default}
-                                name={pokemon.name}
-                                weight={pokemon.weight}
-                                moves={pokemon.moves.length}
-                                type={pokemon.types[0].type.name}
-                                abilities={pokemon.abilities}
-                            />)}
+                                <Link to={`/pokemon/${pokemon.name}`}>
+                                    <PokemonCard
+                                        key={index}
+                                        id={pokemon.id}
+                                        image={pokemon.sprites.other.['official-artwork'].front_default}
+                                        name={pokemon.name}
+                                        weight={pokemon.weight}
+                                        moves={pokemon.moves.length}
+                                        type={pokemon.types[0].type.name}
+                                        abilities={pokemon.abilities}
+                                    />
+                                </Link>
+                        )}
                     </div>
                 </>
             }

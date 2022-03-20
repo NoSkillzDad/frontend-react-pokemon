@@ -1,6 +1,6 @@
 .pokemon-card {
-    min-width: 225px;
-    width: 15%;
+    /*min-width: 225px;*/
+    width: 225px;
     margin: 20px;
     border-radius: 10px;
     display: flex;
