@@ -104,6 +104,14 @@ const PokemonHome = () => {
                                 </Link>
                         )}
                     </div>
+                    <div className={"navigation-buttons-wrapper"}>
+                        {previousPage &&
+                            <button className={"navigation-button"} onClick={() => loadPreviousPokis()}>Previous
+                                Page</button>}
+                        {nextPage &&
+                            <button className={"navigation-button"} onClick={() => loadMorePokis()}>Next
+                                Page</button>}
+                    </div>
                 </>
             }
         </>);

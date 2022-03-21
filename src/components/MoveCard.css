@@ -1,0 +1,38 @@
+.poke-icons-wrapper {
+    background-color: #def2fd;
+    padding: 15px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    border: 3px solid #1f479b;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-icons-title {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.7em;
+    color: black;
+    text-align: center;
+}
+
+.two-cols-wrapper {
+    width: 620px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col- {
+    width: 48%;
+}
+
+.move-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #1f479b;
+}

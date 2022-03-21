@@ -1,5 +1,6 @@
 import React from 'react';
 import './PokemonDetails.css';
+import {Link} from "react-router-dom";
 
 const PokemonDetail = ({id, name, image, moves, weight, abilities, type, stats}) => {
 
@@ -13,7 +14,11 @@ const PokemonDetail = ({id, name, image, moves, weight, abilities, type, stats})
 
     const renderMoves = (moves) => {
         return moves.map(move => (
-            <div key={move.move.name} className={"ability"}>{move.move.name}</div>
+            <Link to={`/move/${move.move.name}`}>
+            <>
+                <div key={move.move.name} className={"ability"}>{move.move.name}</div>
+            </>
+            </Link>
         ))
     }
 

@@ -10,6 +10,7 @@ import AllItems from "./components/AllItems";
 import SearchBar from "./components/SearchBar";
 import FindPokemon from "./components/FindPokemon";
 import Poke404 from "./components/Poke404";
+import GetMove from "./components/GetMove";
 
 const App = () => {
     return (
@@ -38,6 +39,8 @@ const App = () => {
                     <Route path={"/items"} element={<AllItems/>}/>
                     <Route path={"/pokemon/:poke"} element={<FindPokemon />}/>
                     <Route path={"/PokeNotFound/:error"} element={<Poke404 />}/>
+                    <Route path={"/move/:move"} element={<GetMove />}/>
+
                 </Routes>
 
             </div>
