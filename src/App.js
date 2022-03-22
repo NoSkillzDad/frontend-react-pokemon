@@ -40,7 +40,7 @@ const App = () => {
                     <Route path={"/pokemon/:poke"} element={<FindPokemon />}/>
                     <Route path={"/PokeNotFound/:error"} element={<Poke404 />}/>
                     <Route path={"/move/:move"} element={<GetMove />}/>
-
+                    <Route path={"*"} element={<Poke404 />}/>
                 </Routes>
 
             </div>

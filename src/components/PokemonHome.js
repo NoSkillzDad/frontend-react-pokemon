@@ -71,9 +71,9 @@ const PokemonHome = () => {
         getAllPokemons(previousPage);
     }
 
-    const findPokemon = (name) => {
-        navigate(`/pokemon/${name}`);
-    }
+    // const findPokemon = (name) => {
+    //     navigate(`/pokemon/${name}`);
+    // }
 
     return (
         <>
