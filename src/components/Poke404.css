@@ -1,0 +1,67 @@
+.error-title {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.error-title h1 {
+    position: absolute;
+    height: 1em;
+    font-family: PokemonFont, serif;
+    top: -280px;
+    -webkit-text-stroke: 2px #4471ee;
+    -webkit-text-fill-color: #fff90f;
+    font-size: 10em;
+    animation: zoom-out 0.5s ease-out;
+}
+
+.error-title p {
+    position: absolute;
+    display: block;
+    top: 200px;
+    color: #1f479b;
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: invis-to-vis 0.8s ease-in;
+}
+
+@keyframes zoom-out {
+    0% {
+        font-size: 50em;
+        /*transform: scale(20, 20);*/
+    }
+    40% {
+        font-size: 30em;
+        /*transform: scale(10, 10);*/
+    }
+    70% {
+        font-size: 10em;
+        /*transform: scale(1, 1);*/
+    }
+    80% {
+        font-size: 13em;
+        /*transform: scale(3, 3);*/
+    }
+    100% {
+        font-size: 10em;
+        /*transform: scale(1, 1);*/
+    }
+}
+
+@keyframes invis-to-vis {
+
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}

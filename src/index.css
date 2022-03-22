@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@font-face {
+    font-family: PokemonFont;
+    src: url("./assets/PokemonSolid.woff");
+}
 body {
     font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 
